@@ -1,0 +1,379 @@
+/* Shared Style */
+
+	* {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(215deg, #4a4ac5, #ADD8E6);
+	    flex: 1;
+ 	    display: flex;
+ 	    flex-direction: column;
+	    min-height: 100%;
+        }
+	
+	html, body {
+	    height: auto;
+	    min-height: 100%;
+	    margin: 0;
+	    display: flex;
+	    flex-direction: column;
+	}
+
+        header {
+            background: linear-gradient(215deg, #556B2F, #F0E68C);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .navbar {
+            background: linear-gradient(215deg, #000000, #A9A9A9);
+            padding: 10px 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: #F39C12;
+            border: 2px solid white;
+            transform: scale(1.05);
+        }
+
+	nav ul li a.active {
+            background: #2980b9;
+            color: white;
+            font-weight: bold;
+            border: 1px solid white;
+            transform: scale(1.1);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: linear-gradient(215deg, #000000, #A9A9A9);
+            color: white;
+            position: relative;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+
+/* Index Style */
+	
+	index-body {
+            background: url('images/home-appl.png') no-repeat center center fixed;
+	    flex: 1;
+ 	    display: flex;
+ 	    flex-direction: column;
+	    background-size: cover;
+	    background-position: center -10%;
+        }
+	
+	.index-main {
+	    flex: 1;
+            display: flex;
+            padding: 20px;
+            width: 800px;
+            margin: 20px auto;
+            background: #FFF5EE;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+    	.index-content {
+            flex: 1;
+            margin-right: 20px;    
+        }
+    
+        .index-store-description-container {
+            background-color: #e3e4e5;
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .index-store-description {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 1;
+        }
+
+        .index-catalog-container {
+            background-color: #b4b6b9;
+            padding: 5px 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .index-link {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .index-link:hover {
+            text-decoration: underline;
+        }
+
+        .index-store-image {
+            width: 300px;
+            height: auto;
+            max-height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+
+/* Shop Style */
+		
+	shop-body {
+            background: url('images/back-appl.jpg') no-repeat center center fixed;
+	    flex: 1;
+ 	    display: flex;
+ 	    flex-direction: column;
+	    background-size: cover;
+	    
+        }
+
+	.shop-main {
+	    flex: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .shop-h2 {
+            background-color: #f9c573;
+            color: black;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .shop-image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .shop-image-gallery div {
+            background-color: #e0e0e0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .shop-image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .shop-price {
+            font-size: 1.1em;
+            color: black;
+            margin: 5px 0;
+        }
+
+
+/* Video Style */
+
+	.video-main {
+	    flex: 1;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #E6E6FA;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .video-h2 {
+            text-align: center;
+            background-color: #dcabab;
+            color: black;
+            padding: 10px;
+            margin: 0;
+            font-size: 2em;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .video-item {
+            text-align: center;
+            max-width: 300px;
+            background-color: #e3e4e5;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .video-item:hover {
+            transform: scale(1.05);
+        }
+
+        .video-item img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .video-item p {
+            font-size: 1.1em;
+            margin-top: 10px;
+            color: #333;
+            transition: font-weight 0.3s, color 0.3s;
+        }
+
+        .video-item a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .video-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .video-item:hover p {
+            font-weight: bold;
+            color: black;
+        }
+
+
+/* Contact Style */
+
+	.contact-main {
+	    flex: 1;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .contact-container {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            background-color: #E6E6FA;
+        }
+
+        .contact-info h2 {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), #D8BFD8);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 -20px 20px;
+            text-align: center;
+        }
+
+        .contact-details {
+            background-color: #F0FFF0;
+        }
+
+        .contact-details h3 {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), #98FB98);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 -20px 20px;
+            text-align: center;
+        }
+
+        .contact-business-hours {
+            background: #FFF5EE;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-business-hours h3 {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), #FFA07A);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 -20px 20px;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+        }
+
+        .contact-business-hours table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 1em;
+        }
+
+        .contact-business-hours table td {
+            padding: 10px;
+            border: 1px solid #FFA07A;
+            background-color: #FFF0E1;
+        }
+
+        .contact-business-hours table td:first-child {
+            font-weight: bold;
+            color: black;
+            background-color: #FFB84D;
+            border-right: 2px solid #FFA07A;
+        }
+
+        .contact-business-hours table td[colspan="2"] {
+            background: none;
+            text-align: center;
+            color: black;
+        }
+
+        .contact-business-hours table tr td:nth-child(2),
+        .contact-business-hours table tr td:nth-child(3) {
+            text-align: center;
+            color: black;
+            background-color: #FFF0E1;
+        }
+
